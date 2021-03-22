@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">        <!-- This is English language --->
+  <head>
+
+    <meta charset="utf-8">  <!-- It includes ALL the character set of English-->
+                            <!-- AA, BB, aa, bb, 1, 2, !, @, # etc. -->
+
+    <!-- For a Responsive website - you need to input the below mentioned code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- You need to copy paste few CDM codes -->
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<!-- Almost done -- Lets start the program -->
+
+<!--- ----------------------------------------------------------------------------- -->
+<body>
+  
+  <!-- Navbar codes -->
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="4.html"> <b>LEVON BISS</b> </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">  <!-- will do a small styling inorder to move your nav elements to right side of the navbar -->
+    <!-- ML stands for margin left, MR - Margin right -->
+    <!-- The code works opposite here, if you wanna move things to right, use ML and if you wanna move things to left, use MR -->
+
+    <li class="nav-item">
+      <a class="nav-link" href="4.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About us.html">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Gallery.html">Gallery</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="Contact.html">Contact </a>
+    </li>
+  </ul>
+
+  <!-- I need a Search input form -->
+   <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+<section>
+  <br>
+  <h1 style="text-align: center;"><b>About</b> </h1>
+  <!-- I need a small line under the heading -- styling element as per my wireframe -->
+  <hr class="w-100">
+
+<!-- As per my design, I have divided the screen into 2 halfs-->
+<!-- I want image in 6 columns left side of the screen -->
+<!-- I want TEXT in 6 columns RIGHT side of the screen -->
+
+<div class="container">
+  <div class="row">
+
+    <!-- Image content in left side -->
+    <div class="col">
+      <br>
+      <img src="C:\Users\TRONG PHUONG\Desktop\Web2\LB.jpg" width="400" height="400">
+    </div>
+        
+        <!-- Body content in right side-->
+        <div class="col">
+          <br>
+      <h2>LEVON BISS</h2>
+      
+      <p>Levon Biss is a British photographer born in London. Throughout his career Levon's work has covered a wide range of photographic genres, including portraiture, documentary and sport. His work has been exhibited around the world his prints are housed in numerous museum and private collections.<span id="dots">...</span><span id="more">Levon's first book, One Love, took him to 28 countries to document the culture of soccer. The project covered all levels of the game, from children playing in the mountains of Peru to professionals plying their trade at international level. The photography from One Love produced a touring exhibition displayed in 17 countries.</span></p>
+
+<!-- "Read more" & "Read less" buttons -->
+<button onclick="myFunction()" id="myBtn" type="button" class="btn btn-primary">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<!-- Ends -->
+</div>
+  </div>
+</div>
+
+</section>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<!-- Newsletter -->
+
+<form action="/action_page.php">
+  <div class="container">
+    <h2><b>Subscribe to our Newsletter</b></h2>
+    <p>You’ll always be up to speed with the latest news</p>
+
+
+  <div class="container" style="background-color:whitesmoke">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+ 
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 50px;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style>
+
+<body>
+<div class="footer">
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/7thang12/" class="fa fa-facebook"></a>
+<a href="https://www.skype.com/en/" class="fa fa-skype"></a>
+<a href="https://myaccount.google.com/?pli=1" class="fa fa-google"></a>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 12px;
+  font-size: 14px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+</style>
+</section>
